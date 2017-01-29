@@ -34,4 +34,4 @@ if (process.env.TRAVIS) {
   };
 }
 
-exports.config = config;
+module.exports.config = exports.config = config;
