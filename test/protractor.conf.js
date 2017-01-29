@@ -1,5 +1,5 @@
 // An example configuration file.
-exports.config = {
+var config = {
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
@@ -22,4 +22,16 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   }
+};
+
+if (process.env.TRAVIS) {
+  config.sauceUser = process.env.SAUCE_USERNAME;
+  config.sauceKey = process.env.SAUCE_ACCESS_KEY;
+  config.capabilities = {
+    'browserName': 'chrome',
+    'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
+    'build': process.env.TRAVIS_BUILD_NUMBER
+  };
 }
+
+exports.config = config;
