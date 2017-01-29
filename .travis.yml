@@ -10,6 +10,7 @@ addons:
 before_install:
 - npm install http-server -g
 before_script:
-- npm run start
+- npm run start &
+- sleep 5
 script:
 - npm run test:e2e
