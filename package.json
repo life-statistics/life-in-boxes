@@ -1,0 +1,22 @@
+{
+  "name": "life-in-boxes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/life-statistics/life-in-boxes.git"
+  },
+  "author": "'Pawel <'contact@pawelgorka.com'>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/life-statistics/life-in-boxes/issues"
+  },
+  "homepage": "https://github.com/life-statistics/life-in-boxes#readme",
+  "devDependencies": {
+    "protractor": "5.0.0"
+  }
+}
