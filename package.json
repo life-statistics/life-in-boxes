@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:e2e": "protractor test/sample.conf.js",
+    "test:e2e": "protractor test/protractor.conf.js",
     "start": "http-server src"
   },
   "repository": {

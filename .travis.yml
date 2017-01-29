@@ -1,7 +1,16 @@
 language: node_js
 notifications:
-  email: false
+    email: false
 node_js:
     - '6'
+addons:
+    sauce_connect: true
+before_install:
+    - npm install http-server -g
+before_script:
+    - npm start &
+    - sleep 5
+before_script:
+    - npm prune
 script:
-- npm run test:e2e
+    - npm run test:e2e
