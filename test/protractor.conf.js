@@ -14,8 +14,6 @@ var config = {
     './e2e/**/*.spec.js'
   ],
 
-  baseUrl: 'http://localhost:8080',
-
   // Options to be passed to Jasmine.
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
